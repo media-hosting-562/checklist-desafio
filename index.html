@@ -97,10 +97,10 @@
         <div class="item"><input type="checkbox" id="m6"><label for="m6">Toalla</label></div>
         <div class="item"><input type="checkbox" id="m7"><label for="m7">Film</label></div>
         <div class="item"><input type="checkbox" id="m8"><label for="m8">Pesa de 2 kg o 2 paquetes de arroz de un kg C/ uno</label></div>
-        <div id="dl-wrap" style="text-align:center;margin-top:28px;">
+        <div id="dl-wrap" hidden style="text-align:center;margin-top:28px;">
             <a href="index.html" download="Tu_Checklist_para_el_Desafio.html" style="display:inline-block;font-size:16px;font-weight:600;padding:14px 22px;border-radius:14px;background:#ff9900;color:#fff;text-decoration:none;">Descargar para usar sin conexión</a>
         </div>
-        <script>if (location.protocol === 'file:') { document.getElementById('dl-wrap').style.display = 'none'; }</script>
+        <script>if (location.protocol === 'http:' || location.protocol === 'https:') { document.getElementById('dl-wrap').hidden = false; }</script>
     </div>
 
 </body>
